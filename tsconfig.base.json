@@ -8,14 +8,16 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2017",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["esnext", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
       "@langchain-js-demo/component": ["libs/component/src/index.ts"],
+      "@langchain-js-demo/models": ["libs/models/src/index.ts"],
+      "@langchain-js-demo/pinecone": ["libs/pinecone/src/index.ts"],
       "@langchain-js-demo/providers": ["libs/providers/src/index.ts"],
       "@langchain-js-demo/utils": ["libs/utils/src/index.ts"]
     }

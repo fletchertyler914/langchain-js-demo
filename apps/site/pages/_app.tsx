@@ -1,26 +1,27 @@
-import { AppProps } from 'next/app';
+import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import './styles.css';
+import { Inter } from '@next/font/google';
+import { cn } from '@langchain-js-demo/utils';
 
-function CustomApp({ Component, pageProps }: AppProps) {
+import '../styles/index.css';
+
+const inter = Inter({
+  variable: '--font-inter',
+  subsets: ['latin'],
+});
+
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
         <title>Welcome to site!</title>
-
-        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Site description" />
-        <meta name="keywords" content="site, nextjs, react" />
-        <meta name="author" content="Site author" />
-
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="app">
+      <main className={cn(inter.variable, 'flex flex-col justify-center')}>
         <Component {...pageProps} />
       </main>
     </>
   );
 }
 
-export default CustomApp;
+export default MyApp;

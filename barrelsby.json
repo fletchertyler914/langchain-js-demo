@@ -1,0 +1,29 @@
+{
+  "directory": ["./libs", "./tools"],
+  "delete": true,
+  "location": "branch",
+  "name": "index",
+  "structure": "flat",
+  "verbose": false,
+  "singleQuotes": true,
+  "include": [
+    ".ts$",
+    ".tsx$",
+    ".js$",
+    ".jsx$",
+    ".md$",
+    ".mdx$",
+    ".svg$",
+    ".png$"
+  ],
+  "exclude": [
+    "jest.config.*$",
+    ".stories*$",
+    ".spec*$",
+    ".json$",
+    ".babelrc$",
+    ".gitignore$",
+    "README.md$",
+    "LICENSE$"
+  ]
+}
